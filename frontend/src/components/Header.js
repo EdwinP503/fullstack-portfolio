@@ -67,26 +67,22 @@ function Header() {
               <li className="menu-item">
                 <Link className="menu-link" to="/contact" onClick={toggleMenu}>Contact Me</Link>
               </li>
-              <li className="menu-item">
-                <a
-                  className="menu-link"
+              <li className="menu-item social-menu-item">
+                <a className="social-link-inline"
                   href="https://github.com/EdwinP503"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMenu}
                 >
-                  GitHub
+                  <i className="fab fa-github"></i>
                 </a>
-              </li>
-              <li className="menu-item">
-                <a
-                  className="menu-link"
+                <a className="social-link-inline"
                   href="https://www.linkedin.com/in/edwin-polanco/"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={toggleMenu}
                 >
-                  LinkedIn
+                  <i className="fab fa-linkedin"></i>
                 </a>
               </li>
             </ul>

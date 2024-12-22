@@ -1,16 +1,13 @@
-/* File: src/components/HomePage.css */
-
 /* General Layout */
 .home-container {
-    flex: 1;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    color: #ffffff; 
+    color: #ffffff;
     height: auto;
     width: 100vw;
     overflow: hidden;
-    display: flex;
     margin: 0;
     padding: 0;
 }
@@ -28,16 +25,7 @@
     justify-content: space-between;
 }
 
-/* Greeting (Tagline) */
-.greeting {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.8rem;
-    font-weight: 500;
-    color: #4a90e2;
-    margin-bottom: 10px;
-}
-  
-/* Name (main heading) */
+/* Name and Title */
 .name {
     font-family: 'Poppins', sans-serif;
     font-size: 4.5rem;
@@ -46,7 +34,16 @@
     margin-bottom: 15px;
     line-height: 1.2;
 }
-  
+
+/* Greeting (Tagline) */
+.greeting {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #4a90e2;
+    margin-bottom: 10px;
+}
+
 /* Title (Software Developer) */
 .title {
     font-family: 'Poppins', sans-serif;
@@ -66,26 +63,20 @@
     margin-top: 2.5rem;
 }
 
-/* Button Group */
+/* Button Group Styling */
 .btn-group {
     display: flex;
     justify-content: space-between;
     gap: 20px;
-    flex-wrap: nowrap; /* Prevent buttons from wrapping */
-}
-
-/* Button Group */
-.btn-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    align-items: center;
+    flex-wrap: nowrap;
 }
 
 /* Button */
 .btn {
     all: unset;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     padding: 12px 20px;
     font-family: 'Aptos Display', sans-serif;
@@ -100,15 +91,21 @@
     transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #4a90e2;
-    color: black; 
-    transform: translateY(-5px); 
+.btn .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
 }
 
-/* Portrait Section Styling */
+/* Hover Effects */
+.btn:hover {
+    background-color: #4a90e2;
+    color: black;
+    transform: translateY(-5px);
+}
+
+/* Image Section Styling */
 .image-section {
-    flex: 1; 
+    flex: 1;
     display: flex;
     align-items: center;
     margin-right: 5%;
@@ -117,16 +114,16 @@
 }
 
 .image-section img {
-    max-width: 100%;  
-    max-height: 650px; 
-    object-fit: contain;  
-    border-radius: 10px;  
+    max-width: 100%;
+    max-height: 650px;
+    object-fit: contain;
+    border-radius: 10px;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   .home-container {
-      flex-direction: column; 
+      flex-direction: column;
       text-align: center;
   }
 
@@ -141,6 +138,59 @@
   }
 
   .btn-group {
-    display: none;
+    gap: 15px;
+    justify-content: center; /* Center the buttons */
+  }
+
+  .btn {
+    width: 120px; /* Shrink the buttons for medium screens */
+    font-size: 0.95rem; /* Slightly smaller font size */
+  }
+
+  /* Change button text for medium screens */
+  .btn:nth-child(1) {
+    font-size: 0.9rem;
+  }
+  .btn:nth-child(2) {
+    font-size: 0.9rem;
+  }
+  .btn:nth-child(3) {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .btn-group {
+    gap: 10px;
+    justify-content: center; /* Center the buttons */
+  }
+
+  .btn {
+    width: 100px;
+    padding: 10px;
+    font-size: 0.9rem; /* Even smaller font size */
+  }
+
+  .btn .icon {
+    font-size: 1.5rem;
+    margin-right: 0;
+  }
+
+  /* Replace button text with icons for small screens */
+  .btn:nth-child(1) {
+    font-size: 0;
+  }
+  .btn:nth-child(2) {
+    font-size: 0;
+  }
+  .btn:nth-child(3) {
+    font-size: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .btn {
+    font-size: 0.8rem;
+    padding: 8px;
   }
 }

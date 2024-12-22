@@ -1,7 +1,7 @@
-// File: src/components/HomePage.js
 import React from 'react';
 import './HomePage.css';
 import { useNavigate } from 'react-router-dom';
+import { FaUser, FaBriefcase, FaEnvelope } from 'react-icons/fa';
 
 function HomePage() {
   const navigate = useNavigate();
@@ -17,14 +17,17 @@ function HomePage() {
           Let’s connect!
         </p>
         <div className="btn-group">
-          <button onClick={() => navigate('/about')} className="btn btn-outline-light">
-            Learn more <br /> about me
+          <button onClick={() => navigate('/about')} className="btn">
+            <FaUser className="icon" />
+            About Me
           </button>
-          <button onClick={() => navigate('/projects')} className="btn btn-outline-light">
-            Explore <br /> my work
+          <button onClick={() => navigate('/projects')} className="btn">
+            <FaBriefcase className="icon" />
+            Projects
           </button>
-          <button onClick={() => navigate('/contact')} className="btn btn-outline-light">
-            Reach out <br /> to me
+          <button onClick={() => navigate('/contact')} className="btn">
+            <FaEnvelope className="icon" />
+            Contact
           </button>
         </div>
       </div>

@@ -59,13 +59,26 @@
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
-  color: #4a90e2;
+  color: white;
+  position: relative;
+  display: inline-block;
+}
+
+.project-intro h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* Distance between text and the line */
+  left: 0;
+  width: 100%; /* Line will span under the text */
+  height: 2px;
+  background: #4a90e2; /* Accent color for the line */
 }
 
 .project-intro p {
   font-size: 1.25rem;
   color: #fff;
   line-height: 1.5;
+  font-family: 'Aptos Display', sans-serif;
 }
 
 .project-details {
@@ -162,9 +175,5 @@
   .carousel-card.active {
     transform: translateX(0) scale(0.9); /* Slightly reduce size */
     box-shadow: 0 0 15px 5px rgba(74, 144, 226, 0.5); /* Subtle glow */
-  }
-
-  .project-intro p {
-    font-size: 1rem;
   }
 }

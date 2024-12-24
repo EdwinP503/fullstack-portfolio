@@ -31,9 +31,21 @@
 }
 
 .text-center {
-  color: #4a90e2;
+  color: #fff;
   font-size: 2rem;
   font-weight: 600;
+  position: relative;
+}
+
+/* Add a line beneath the h2 text */
+.text-center::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;  /* Distance from the text */
+  left: 0;
+  width: 100%;  /* Make the line as wide as the text */
+  height: 3px;
+  background-color: #4a90e2; /* Line color */
 }
 
 .btn-ab {

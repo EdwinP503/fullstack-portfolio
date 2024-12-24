@@ -1,5 +1,5 @@
 // File: src/components/AboutMe.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './AboutMe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faServer, faSitemap, faTools } from '@fortawesome/free-solid-svg-icons';
@@ -108,25 +108,29 @@ function AboutMe() {
     { icon: faPython, label: 'Python' },
     { icon: faGitAlt, label: 'Git' },
     { icon: faTools, label: 'Automation' },
-    { icon: faServer, label: 'System Administration' },
-    { icon: faSitemap, label: 'Project Management' },
+    { icon: faServer, label: 'Sys Admin' },
+    { icon: faSitemap, label: 'PM' },
     { icon: faSlack, label: 'Slack' },
     { icon: faGoogle, label: 'Google Suite' },
   ];
-
+  
   return (
     <div className="about-me-container">
       {/* Skillset icons container */}
-      <div className="skills-container">
-        {skills.map((skill, idx) => (
-          <div className="skill-item" key={idx}>
-            <div className="icon-container">
-              <FontAwesomeIcon icon={skill.icon} />
+      <h2>Skills</h2>
+      <div className="slider" style={{ '--width': '100px', '--height': '70px', '--quantity': skills.length }}>
+        <div className="list">
+          {[...skills, ...skills].map((skill, idx) => (
+            <div className="item" key={idx} style={{ '--position': idx + 1 }}>
+              <div className="icon-container">
+                <FontAwesomeIcon icon={skill.icon} />
+              </div>
               <p className="skill-label">{skill.label}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
+
       <h2>Experience Timeline</h2>
       <div className="timelines-container">
         {/* First timeline */}

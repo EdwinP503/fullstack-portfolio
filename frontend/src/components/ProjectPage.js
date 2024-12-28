@@ -77,8 +77,8 @@ function ProjectPage() {
           Explore some of my most exciting projects
         </p>
       </div>
-      <div className="carousel-container" {...handlers}>
-        <div className="carousel">
+      <div className="carousel-container" {...handlers} aria-live="polite">
+        <div className="carousel" role="region" aria-label="Project carousel">
           {projects.map((project, idx) => (
             <div
               key={idx}
@@ -86,8 +86,13 @@ function ProjectPage() {
                 idx === activeIndex ? 'active' : idx === (activeIndex - 1 + projects.length) % projects.length ? 'prev' : idx === (activeIndex + 1) % projects.length ? 'next' : ''
               }`}
               onClick={() => selectProject(idx)} // Click action to select a card
+              aria-label={`Project titled ${project.title}. Click for more details.`}
             >
-              <img src={project.image} alt={project.title} />
+              <img 
+                src={project.image} 
+                alt={project.title} 
+                loading="lazy" // Lazy load images
+              />
               <div className="project-details">
                 <h3>{project.title}</h3>
                 <h4>{project.organization}</h4>

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './AboutMe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faServer, faSitemap, faTools } from '@fortawesome/free-solid-svg-icons';
+import { faServer, faSitemap, faTools } from '@fortawesome/free-solid-svg-icons';
 import {
   faGoogle, faNodeJs, faReact, faGitAlt,
   faPython, faSlack } from '@fortawesome/free-brands-svg-icons';
@@ -112,6 +112,15 @@ function AboutMe() {
     { icon: faSlack, label: 'Slack' },
     { icon: faGoogle, label: 'Google Suite' },
   ];
+
+  const [paused, setPaused] = useState(false);
+
+  const handleSkillTap = () => {
+    setPaused(true);
+    setTimeout(() => {
+      setPaused(false); // Resumes the animation after 3 seconds
+    }, 1000); // 1 seconds pause
+  };
   
   return (
     <div className="about-me-container">
@@ -120,7 +129,8 @@ function AboutMe() {
       <div className="slider" style={{ '--width': '100px', '--height': '70px', '--quantity': skills.length }}>
         <div className="list">
           {[...skills, ...skills].map((skill, idx) => (
-            <div className="item" key={idx} style={{ '--position': idx + 1 }}>
+            <div className={`item ${paused ? 'paused' : ''}`}
+            key={idx} style={{ '--position': idx + 1 }} onClick={handleSkillTap} >
               <div className="icon-container">
                 <FontAwesomeIcon icon={skill.icon} />
               </div>

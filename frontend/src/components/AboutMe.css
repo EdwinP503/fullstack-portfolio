@@ -1,6 +1,4 @@
-/* About Me container styling */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
-
+/* AboutMe.js styling */
 .slider {
   width: 100%;
   height: var(--height);

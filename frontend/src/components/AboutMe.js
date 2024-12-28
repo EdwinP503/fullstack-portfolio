@@ -1,12 +1,11 @@
 // File: src/components/AboutMe.js
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import './AboutMe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLaptopCode, faServer, faSitemap, faTools } from '@fortawesome/free-solid-svg-icons';
 import {
-  faGoogle, faNodeJs, faReact, faAws, faDocker, faGitAlt,
-  faPython, faJenkins, faGithub, faSlack, faBitbucket, faJira
-} from '@fortawesome/free-brands-svg-icons';
+  faGoogle, faNodeJs, faReact, faGitAlt,
+  faPython, faSlack } from '@fortawesome/free-brands-svg-icons';
 
 function AboutMe() {
   const [showMore, setShowMore] = useState(false);

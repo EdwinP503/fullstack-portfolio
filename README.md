@@ -78,8 +78,8 @@ __Serverless Contact Form Workflow__
 __Frontend Setup__
 1. **Clone the Repository and navigate to the frontend folder**:
    ```bash
-   git clone https://github.com/EdwinP503/edwin-fullstack-portfolio.git
-   cd edwin-fullstack-portfolio/frontend
+   git clone https://github.com/EdwinP503/fullstack-portfolio.git
+   cd fullstack-portfolio/frontend
 
 2. **Install Dependencies**:
    ```bash
@@ -94,7 +94,7 @@ __Frontend Setup__
 __Backend Setup (MongoDB Integration)__
 1. Navigate to the backend folder:
      ```bash
-     cd edwin-fullstack-portfolio/backend
+     cd fullstack-portfolio/backend
 
 2. Install dependencies:
      ```bash

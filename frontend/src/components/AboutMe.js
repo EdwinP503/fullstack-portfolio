@@ -51,7 +51,7 @@ function AboutMe() {
     {
       milestones: [
         {
-          name: 'Delivery Driver - Developing Time Management and Customer Service',
+          name: 'PT Delivery Driver - Developing Time Management and Customer Service',
           text: 'Delivered packages for Uber, UberEats, Amazon Flex, and Doordash, refining time management, navigation, and customer satisfaction skills.',
         }
       ]
@@ -59,7 +59,7 @@ function AboutMe() {
     {
       milestones: [
         {
-          name: 'Construction Supervisor - G.P. Carpentry & Remodeling LLC',
+          name: 'FT Construction Supervisor - G.P. Carpentry & Remodeling LLC',
           text: 'Led remodeling projects and a carpentry team, improving project completion rates through effective scheduling and resource management',
         }
       ]
@@ -79,7 +79,7 @@ function AboutMe() {
     {
       milestones: [
         {
-          name: 'FedEx Ground - Opertations Administrator',
+          name: 'FedEx Ground - Operations Administrator I',
           text: 'Supported warehouse operations by reviewing, researching,  and entering data in multiple systems to enhance functional efficiency. Constantly communicating with customers for package pickup/drop-offs.',
         }
       ]

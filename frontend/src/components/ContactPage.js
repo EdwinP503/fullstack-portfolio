@@ -14,6 +14,7 @@ function ContactPage() {
   const [errors, setErrors] = useState({});
   const [message, setMessage] = useState('');
   const [success, setSuccess] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);  // State for loading spinner
 
   // Handle input changes
   const handleChange = (e) => {
@@ -42,15 +43,24 @@ function ContactPage() {
       return;
     }
 
+    setIsLoading(true);  // Show loading spinner
+
     try {
       // Get API URL from environment variable
       const apiUrl = process.env.REACT_APP_API_URL;
 
       // Make POST request using Axios
       const response = await axios.post(apiUrl, formData);
-      setSuccess(true); // Show success message
-      setMessage('Your message has been sent successfully!');
-      setFormData({ name: '', email: '', message: '' });  // Clear form fields
+
+      // Handle response
+      if (response.status === 200) {
+        setSuccess(true); // Show success message
+        setMessage('Your message has been sent successfully!');
+        setFormData({ name: '', email: '', message: '' });  // Clear form fields
+      } else {
+        setSuccess(false);
+        setMessage('There was an issue with your submission. Please try again later.');
+      }
 
       // Hide the success message after 10 seconds
       setTimeout(() => {
@@ -58,7 +68,22 @@ function ContactPage() {
         setMessage('');
       }, 10000);  // 10 seconds
     } catch (error) {
-      setMessage('There was an error sending your message. Please try again later.');
+      if (error.response) {
+        // Server errors (e.g., 500)
+        if (error.response.status === 400) {
+          setMessage('There was a problem with your submission. Please check your input and try again.');
+        } else if (error.response.status >= 500) {
+          setMessage('There was an issue with the server. Please try again later.');
+        }
+      } else if (error.request) {
+        // No response received from the server
+        setMessage('No response from the server. Please try again later.');
+      } else {
+        // Other errors
+        setMessage('An unexpected error occurred. Please try again later.');
+      }
+    } finally {
+      setIsLoading(false);  // Hide loading spinner
     }
   };
 
@@ -108,11 +133,20 @@ function ContactPage() {
               {errors.message && <div className="invalid-feedback">{errors.message}</div>}
             </div>
             <div className="d-grid">
-              <button type="submit" className="btn-ab">Send Message</button>
+              <button type="submit" className="btn-ab" disabled={isLoading}>
+                {isLoading ? 'Sending...' : 'Send Message'}
+              </button>
             </div>
           </form>
           {message && !success && <div className="mt-4 alert alert-danger">{message}</div>}
           {success && <div className="mt-4 alert alert-info">{message}</div>}
+          {isLoading && (
+            <div className="loading-spinner">
+              <div className="spinner-border text-primary" role="status">
+                <span className="visually-hidden">Loading...</span>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

@@ -36,7 +36,7 @@ __Backend__
 ## Technologies Used
 __Frontend__
 - React.js: Component-based library for building a dynamic and responsive UI.
-- CSS3 & SASS: For styling and responsive layouts.
+- CSS3: For styling and responsive layouts.
 - Netlify: Hosting and deployment.
 
 __Backend__

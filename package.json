@@ -13,8 +13,12 @@
     "express": "^4.21.2",
     "framer-motion": "^11.13.5",
     "mongodb": "^6.11.0",
+<<<<<<< HEAD
     "mongoose": "^8.8.4",
     "nth-check": "^2.1.1"
+=======
+    "mongoose": "^8.9.5"
+>>>>>>> 6b8d4758a2f597abfed9f6d1a257e50e3f6a89e0
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",

@@ -21,7 +21,7 @@ __Frontend__
 - Skill Visualization: A unique, alternating layout with hover effects to display technical proficiencies.
 - Interactive Timeline: Displays a detailed history of experiences and achievements.
 - Contact Section: Enables visitors to send messages directly from the site using a serverless contact form.
-
+ 
 __Backend__
 - **Serverless Contact Form**:
      - Built using AWS Lambda, API Gateway, and DynamoDB.

@@ -6,7 +6,7 @@ node_modules/
 
 # Production build directory
 build/
-pentest-report/
+pentest_report/
 
 # Log files
 *.log

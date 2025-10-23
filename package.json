@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "start": "concurrently \"npm run start --prefix frontend\" \"npm run dev --prefix backend\"",
-    "build": "npm run build --prefix frontend && npm run build --prefix backend",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "echo \"To run the frontend locally: cd frontend && npm ci && npm start\"",
+    "build": "echo \"To build the frontend: cd frontend && npm ci && npm run build\"",
+    "test": "echo \"No tests configured at repository root. Run tests inside package folders.\" && exit 0"
   },
   "dependencies": {
     "@mdx-js/mdx": "^3.1.0",

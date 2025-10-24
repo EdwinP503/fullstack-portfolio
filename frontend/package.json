@@ -24,7 +24,7 @@
     "react-swipeable": "^7.0.2",
     "styled-components": "^6.1.13",
     "three": "^0.169.0",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.2"
   },
   "browserslist": {
     "production": [

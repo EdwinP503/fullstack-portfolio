@@ -22,7 +22,7 @@
     "mongodb": "^6.11.0",
     "mongoose": "^8.20.0",
     "nth-check": "^2.1.1",
-    "rollup": "^4.34.9"
+    "rollup": "^4.53.3"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.25.9",

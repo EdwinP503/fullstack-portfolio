@@ -1,0 +1,19 @@
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/frontend"
+    schedule:
+      interval: "weekly"
+    ignore:
+      # webpack-dev-server dev-only vulnerabilities
+      # These don't affect production builds on Netlify
+      # The vulnerabilities (GHSA-9jgg-88mc-972h, GHSA-4v9v-hfq4-rm2v) 
+      # require v5.2.1+, but Create React App v5 is locked to v4.15.2
+      # for stability. This is an acceptable dev dependency risk.
+      - dependency-name: "webpack-dev-server"
+        versions: ["4.15.x"]
+
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"

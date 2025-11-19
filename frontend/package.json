@@ -5,8 +5,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postinstall": "patch-package"
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.6.0",
@@ -26,8 +25,7 @@
     "react-scripts": "^5.0.1",
     "react-swipeable": "^7.0.2",
     "styled-components": "^6.1.13",
-    "three": "^0.169.0",
-    "webpack-dev-server": "^5.2.1"
+    "three": "^0.169.0"
   },
   "browserslist": {
     "production": [
@@ -43,7 +41,6 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
-    "patch-package": "^8.0.1",
     "resolve-url-loader": "^5.0.0"
   },
   "overrides": {

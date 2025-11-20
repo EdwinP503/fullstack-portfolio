@@ -4,7 +4,7 @@ Welcome to the repository for my personal portfolio website! This project serves
 
 Check out the live version of my portfolio: [edwin-boston.com](https://edwin-boston.com)
 
-## 📖 Table of Contents
+## Table of Contents
 
 1. [Project Overview](#project-portfolio)
 2. [Technologies Used](#technologies-used)
@@ -141,7 +141,7 @@ Feel free to connect with me for job opportunities, collaborations, or feedback:
 * Portfolio: [edwin-boston.com](https://edwin-boston.com)
 * LinkedIn: [linkedin.com/in/edwin-polanco](https://www.linkedin.com/in/edwin-polanco/)
 
-This project demonstrates my ability to design, develop, and deploy a robust and scalable portfolio website with modern technologies and cloud services. Thank you for visiting my repository! 🙌
+This project demonstrates my ability to design, develop, and deploy a robust and scalable portfolio website with modern technologies and cloud services. Thank you for visiting my repository!
 
 ## License and Viewing Permissions
 This repository is available for viewing under the **Creative Commons Attribution-NoDerivs 4.0 International (CC BY-ND 4.0)** license. The use of the backend structure, serverless logic, or design must include attribution to the creator and is limited to personal, non-commercial use.

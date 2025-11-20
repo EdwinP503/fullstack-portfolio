@@ -4,8 +4,8 @@
   "private": true,
   "description": "React portfolio deployed on Netlify",
   "scripts": {
-    "start": "echo \"To run the frontend locally: cd frontend && npm ci --legacy-peer-deps && npm start\"",
-    "build": "echo \"To build the frontend: cd frontend && npm ci --legacy-peer-deps && npm run build\"",
+    "start": "echo \"To run the frontend locally: cd frontend && npm ci && npm start\"",
+    "build": "echo \"To build the frontend: cd frontend && npm ci && npm run build\"",
     "test": "echo \"To run tests: cd frontend && npm test\""
   }
 }

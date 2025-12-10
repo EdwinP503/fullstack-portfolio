@@ -15,6 +15,30 @@ function AboutMe() {
     {
       milestones: [
         {
+          name: 'SOC Analyst Intern - CyberTrust Massachusetts',
+          text: 'Provide security operations support across diverse client environments, focusing on endpoint protection, threat detection, and incident escalation within a SOC workflow',
+        }
+      ]
+    },
+    {
+      milestones: [
+        {
+          name: 'Senior Operations Administrator - FedEx Ground',
+          text: 'Support nightly operations at a high-volume logistics facility, managing exception workflows, device usage, and compliance procedures to maintain accurate, efficient package movement',
+        }
+      ]
+    },
+    {
+      milestones: [
+        {
+          name: 'Cybersecurity Analyst Training - Per Scholas Greater Boston',
+          text: 'Gained hands-on experience in cybersecurity operations and network administration. During the program, I earned both my CySA+ and Splunk certifications, strengthening my ability to detect, analyze, and respond to security threats.',
+        }
+      ]
+    },
+    {
+      milestones: [
+        {
           name: 'Software Engineer Intern - Rapid7',
           text: 'Designed and implemented automated solutions as part of the Automations & Productivity team, focusing on streamlining processes and IT integrations for operational efficiency.',
         }

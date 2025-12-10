@@ -10,7 +10,7 @@ import {
 function AboutMe() {
   const [showMore, setShowMore] = useState(false);
 
-  {/* 2024 */}
+  {/* 2025 */}
   const timelineData1 = [
     {
       milestones: [
@@ -35,7 +35,10 @@ function AboutMe() {
           text: 'Gained hands-on experience in cybersecurity operations and network administration. During the program, I earned both my CySA+ and Splunk certifications, strengthening my ability to detect, analyze, and respond to security threats.',
         }
       ]
-    },
+    }
+  ];
+  {/* 2024 */}
+  const timelineData2 = [
     {
       milestones: [
         {
@@ -71,7 +74,7 @@ function AboutMe() {
   ];
 
   {/* 2023 */}
-  const timelineData2 = [
+  const timelineData3 = [
     {
       milestones: [
         {
@@ -91,7 +94,7 @@ function AboutMe() {
   ];
 
   {/* 2022 */}
-  const timelineData3 = [
+  const timelineData4 = [
     {
       milestones: [
         {
@@ -111,7 +114,7 @@ function AboutMe() {
   ];
 
   {/* 2021 */}
-  const timelineData4 = [
+  const timelineData5 = [
     {
       milestones: [
         {

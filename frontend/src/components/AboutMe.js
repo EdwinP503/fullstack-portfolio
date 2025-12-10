@@ -172,7 +172,7 @@ function AboutMe() {
         {/* First timeline */}
         <div className="vertical-timeline">
           <div className="timeline-start">
-            <div className="year-label">2024</div>
+            <div className="year-label">2025</div>
           </div>
           {timelineData1.map((yearData, index) => (
             <div className="milestones" key={index}>
@@ -199,7 +199,7 @@ function AboutMe() {
         {/* Second timeline */}
         <div className={`vertical-timeline ${showMore ? 'visible' : 'hidden'}`}>
           <div className="timeline-start">
-            <div className="year-label">2023</div>
+            <div className="year-label">2024</div>
           </div>
           {timelineData2.map((yearData, index) => (
             <div className="milestones" key={index}>
@@ -219,7 +219,7 @@ function AboutMe() {
         {/* Third timeline */}
         <div className={`vertical-timeline ${showMore ? 'visible' : 'hidden'}`}>
           <div className="timeline-start">
-            <div className="year-label">2022</div>
+            <div className="year-label">2023</div>
           </div>
           {timelineData3.map((yearData, index) => (
             <div className="milestones" key={index}>
@@ -239,7 +239,7 @@ function AboutMe() {
         {/* Fourth timeline */}
         <div className={`vertical-timeline ${showMore ? 'visible' : 'hidden'}`}>
           <div className="timeline-start">
-            <div className="year-label">2021</div>
+            <div className="year-label">2022</div>
           </div>
           {timelineData4.map((yearData, index) => (
             <div className="milestones" key={index}>

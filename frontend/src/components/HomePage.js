@@ -9,7 +9,7 @@ function HomePage() {
   return (
     <div className="home-container">
       <div className="text-section">
-        <h2 className="title">Software Developer</h2>
+        <h2 className="title">Cybersecurity & IT Professional</h2>
         <h1 className="name">Edwin Polanco</h1>
         <h2 className="greeting">Code with Purpose, Impact with Passion.</h2>
         <p className="intro">

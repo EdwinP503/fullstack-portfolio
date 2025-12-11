@@ -20,6 +20,7 @@ function ProjectPage() {
       image: require("../assets/images/mern-app.jpg"),
       summary: "Developed back-end of a CRUD web application for medical records using the MERN stack, handling over 1000+ records.",
       skills: "Skills: Node.js, Express.js, MongoDB, REST APIs, Team Collaboration",
+      repoUrl: "https://github.com/EdwinP503/MERN-CRUD-Application.git"
     },
     {
       title: "Plant Phenotyping: Image Analysis of Pear Rootstocks",
@@ -28,6 +29,7 @@ function ProjectPage() {
       image: require("../assets/images/plantcv-1.jpg"),
       summary: "Increased phenotyping data collection efficiency by 60%, achieving 97% data accuracy for architectural traits in pear rootstocks.",
       skills: "Skills: Data Analysis, Python, PlantCV Library",
+      repoUrl: "https://github.com/EdwinP503/Plant-Phenotyping-Pear-Rootstocks.git"
     },
     {
       title: "Phenotyping Analysis: Pearl Millet Panicles",
@@ -36,6 +38,7 @@ function ProjectPage() {
       image: require("../assets/images/plantcv-2.jpg"),
       summary: "Automated measurement extraction from Pearl millet panicle images using the PlantCV library, increasing monitoring efficiency by 80%.",
       skills: "Skills: Automation, Python, Image Processing",
+      repoUrl: "https://github.com/EdwinP503/Pearl-Millet-Panicles.git"
     },
     /*{
       title: "Phenotypic Data Analysis with PlantCV",
@@ -102,6 +105,10 @@ function ProjectPage() {
                 <h4>{project.organization}</h4>
                 <p>{project.summary}</p>
                 <p>{project.skills}</p>
+                {project.repoUrl ? (
+                  <a href={project.repoUrl} target="_blank" rel="noopener noreferrer" className="repo-link" aria-label={`Open ${project.title} GitHub repository`}> View on GitHub </a>
+                ) 
+                : (<span className="repo-link" aria-hidden="true" style={{opacity:0.75,cursor:'default'}}>Classified</span>)}
               </div>
             </div>
           ))}

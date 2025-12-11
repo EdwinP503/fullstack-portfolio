@@ -120,6 +120,19 @@
   padding: 40px;
 }
 
+.repo-link {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 12px;
+  background: #24292f;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+
+.repo-link:hover { opacity: 0.9; }
+
 .carousel-card:hover .overlay {
   opacity: 1;
 }

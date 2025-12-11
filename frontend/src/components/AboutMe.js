@@ -78,7 +78,7 @@ function AboutMe() {
     {
       milestones: [
         {
-          name: 'PT Delivery Driver - Developing Time Management and Customer Service',
+          name: 'Delivery Driver - Developing Time Management and Customer Service',
           text: 'Delivered packages for Uber, UberEats, Amazon Flex, and Doordash, refining time management, navigation, and customer satisfaction skills.',
         }
       ]
@@ -86,7 +86,7 @@ function AboutMe() {
     {
       milestones: [
         {
-          name: 'FT Construction Supervisor - G.P. Carpentry & Remodeling LLC',
+          name: 'Construction Project Manager - G.P. Carpentry & Remodeling LLC',
           text: 'Led remodeling projects and a carpentry team, improving project completion rates through effective scheduling and resource management',
         }
       ]
@@ -102,14 +102,6 @@ function AboutMe() {
           text: 'Automated phenotyping data collection through image analysis for object recognition. Notable project: [Plant Phenotyping: Image Analysis of Pear Rootstocks using PlantCV]',
         }
       ]
-    },
-    {
-      milestones: [
-        {
-          name: 'FedEx Ground - Operations Administrator I',
-          text: 'Supported warehouse operations by reviewing, researching,  and entering data in multiple systems to enhance functional efficiency. Constantly communicating with customers for package pickup/drop-offs.',
-        }
-      ]
     }
   ];
 
@@ -122,11 +114,19 @@ function AboutMe() {
           text: "Provided tutoring to students at East Boston High School for Math and Computer programming basics",
         }
       ]
+    },
+    {
+      milestones: [
+        {
+          name: 'FedEx Ground - Operations Administrator I',
+          text: 'Supported warehouse operations by reviewing, researching,  and entering data in multiple systems to enhance functional efficiency. Constantly communicating with customers for package pickup/drop-offs.',
+        }
+      ]
     }
   ];
 
   {/* 2020 */}
-  {/* 2029 */}
+  {/* 2019 */}
 
   const skills = [
     { icon: faNodeJs, label: 'Node.js' },
@@ -186,18 +186,11 @@ function AboutMe() {
           ))}
         </div>
 
-        {/* Read more button */}
-        <div className="timeline-spacer-pro">
-          <button 
-            className="read-more-btn" 
-            onClick={() => setShowMore(!showMore)}
-          >
-            {showMore ? "Show Less" : "Read More"}
-          </button>
-        </div>
+        {/* Spacer between timelines */}
+        <div className="timeline-spacer"></div>
 
         {/* Second timeline */}
-        <div className={`vertical-timeline ${showMore ? 'visible' : 'hidden'}`}>
+        <div className="vertical-timeline">
           <div className="timeline-start">
             <div className="year-label">2024</div>
           </div>
@@ -213,8 +206,15 @@ function AboutMe() {
           ))}
         </div>
 
-        {/* Spacer between timelines */}
-        <div className="timeline-spacer"></div>
+        {/* Read more button */}
+        <div className="timeline-spacer-pro">
+          <button 
+            className="read-more-btn" 
+            onClick={() => setShowMore(!showMore)}
+          >
+            {showMore ? "Show Less" : "Read More"}
+          </button>
+        </div>
 
         {/* Third timeline */}
         <div className={`vertical-timeline ${showMore ? 'visible' : 'hidden'}`}>
@@ -252,6 +252,30 @@ function AboutMe() {
             </div>
           ))}
         </div>
+
+        {/* Spacer between timelines */}
+        <div className="timeline-spacer"></div>
+
+        {/* Fifth timeline */}
+        <div className={`vertical-timeline ${showMore ? 'visible' : 'hidden'}`}>
+          <div className="timeline-start">
+            <div className="year-label">2021</div>
+          </div>
+          {timelineData5.map((yearData, index) => (
+            <div className="milestones" key={index}>
+              {yearData.milestones.map((milestone, idx) => (
+                <div key={idx} className="milestone-dot">
+                  <h3>{milestone.name}</h3>
+                  <p>{milestone.text}</p>
+                </div>
+              ))}
+            </div>
+          ))}
+        </div>
+        
+        {/* Spacer between timelines */}
+        <div className="timeline-spacer"></div>
+
       </div>
     </div>
   );

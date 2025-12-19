@@ -30,6 +30,14 @@
   text-align: center;
 }
 
+.lead a {
+  text-decoration: underline;
+}
+
+.lead a:hover {
+  color: #357abd;
+}
+
 .text-center {
   color: #fff;
   font-size: 2rem;

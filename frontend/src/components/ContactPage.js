@@ -93,7 +93,7 @@ function ContactPage() {
         <div className="col-md-8">
           <h2 className="text-center mb-4">Contact me</h2>
           <p className="lead">
-            Feel free to reach out for inquiries, or just to say hello! I’m always excited to connect.
+            Feel free to reach out for inquiries, feedback, or just to say hello! Or <a href="https://calendly.com/edwinpolanco/new-meeting" target="_blank" rel="noopener noreferrer"> book some time to meet! </a>
           </p>
           <form onSubmit={handleSubmit}>
             <div className="mb-3">

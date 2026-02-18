@@ -12,6 +12,9 @@ updates:
       # for stability. This is an acceptable dev dependency risk.
       - dependency-name: "webpack-dev-server"
         versions: ["4.15.x"]
+      - dependency-name: "jsonpath"
+        versions: ["1.1.x"]
+        reason: "Build-time only, no user-facing exposure. Tracked for CRA removal."
 
   - package-ecosystem: "npm"
     directory: "/"

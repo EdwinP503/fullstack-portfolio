@@ -24,7 +24,7 @@
     "react-router-dom": "^7.13.0",
     "react-scripts": "^5.0.1",
     "react-swipeable": "^7.0.2",
-    "styled-components": "^6.1.13",
+    "styled-components": "^6.3.11",
     "three": "^0.169.0"
   },
   "browserslist": {

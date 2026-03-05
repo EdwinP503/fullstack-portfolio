@@ -3,6 +3,7 @@ node_modules/
 
 # Local environment variables
 .env
+.env*
 
 # Production build directory
 build/

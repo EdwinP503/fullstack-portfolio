@@ -74,40 +74,6 @@ __Serverless Contact Form Workflow__
 4. DynamoDB:
      - Stores form submissions for later review.
 
-## Setup and Installation
-__Frontend Setup__
-1. **Clone the Repository and navigate to the frontend folder**:
-   ```bash
-   git clone https://github.com/EdwinP503/fullstack-portfolio.git
-   cd fullstack-portfolio/frontend
-
-2. **Install Dependencies**:
-   ```bash
-   npm install
-
-4. **Run the frontend locally**:
-   ```bash
-   npm start
-
-5. The frontend will run on `http://localhost:3000`.
-
-__Backend Setup (MongoDB Integration)__
-1. Navigate to the backend folder:
-     ```bash
-     cd fullstack-portfolio/backend
-
-2. Install dependencies:
-     ```bash
-     npm install
-
-3. Set up a `.env` file with the following:
-     ```bash
-     MONGO_URI=<your-mongodb-uri>
-
-4. Run the backend locally:
-     ```bash
-     node server.js
-
 __Serverless Setup (AWS Lambda Contact Form)__
 1. Deployed the serverless function using AWS or the Serverless Framework. Follow the instructions in AWS Lambda Functions to upload `lambda-contact-handler folder` as a .zip file.
 2. Ensured the AWS API Gateway is configured with the correct endpoint: `https://api.example/contactRoute`.

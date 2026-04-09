@@ -76,11 +76,21 @@ function App() {
   return (
     <Router>
       <GlobalStyle /> {/* Apply global styles */}
-      <div className="App">
+      <div className="App" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
         <Header />
         <Suspense fallback={<Loader />}>
           <AnimatedRoutes />
         </Suspense>
+        <footer style={{
+          textAlign: 'center',
+          padding: '20px',
+          marginTop: 'auto',
+          backgroundColor: '#000',
+          color: '#fff',
+          fontSize: '14px'
+        }}>
+          © 2024–{new Date().getFullYear()} Edwin Polanco. All rights reserved.
+        </footer>
       </div>
     </Router>
   );
